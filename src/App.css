@@ -1,38 +1,170 @@
+
 .App {
-  text-align: center;
+  text-align: right;
+  background-color: #1f2833;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-stretch: ultra-condensed;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.hello{
+  padding: 70px 70px;
+  margin-right: 50px;
+  font-size: 100px;
   color: white;
+  height: auto;
+  padding-bottom: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+  display: inline-block;
+  width: 100%;
+}
+.header--title{
+  position: relative;
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-right: 8rem;
+  bottom: 6rem;
+  letter-spacing: -0.15rem;
+  color: #66FCF1;
+}
+.logo{
+  width: 100px;
+  padding-top: 20px;
+  padding-right: 0.7rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.list--contactUs{
+  display: flex;
+  list-style-type: none;
+  position:relative;
+  bottom: 5rem;
+
 }
+.insta {
+  width: 25px;
+  padding-right: 17px;
+}
+.phone{
+  width: 25px;
+  padding-right: 17px;
+}
+.location{
+  width: 25px;
+}
+.header--information{
+  color: #c5c6c7;
+  padding-inline : 1rem;
+  position: relative;
+  bottom: 5rem;
+}
+hr{
+  border-color: #66FCF1;
+  
+}
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  list-style: none;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  text-decoration: none;
+  max-width: 30px;
+  overflow: none;
+  width: default;
+  
+  
+  
+
+}
+.nav{
+  background-color: #0b0c10;
+  margin-left: 0.02rem;
+  
+  border-radius: 10px;
+  overflow: auto;
+  width: default;
+}
+.nav a{
+  color: #66fcf1;
+  text-decoration: none;
+  
+}
+
+.nav li{
+  list-style: none;
+  color: inherit;
+  text-decoration: none;
+  margin: right 10px;;
+}
+
+
+.nav li.active {
+  background-color: #1f2833;
+  padding: 5px 5px;
+  color: white;
+  transform: scale(1.5);
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #66fcf1;
+  
+}
+
+
+.order--card{
+  position: relative;
+  display: block;
+  
+  padding: 20px ;
+  height: fit-content;
+  
+  
+
+}
+.order{
+  border: 1px solid #66FCF1;
+  border-radius: 20px;
+  box-shadow: 0px 2.98256px 7.4564px 5px #45a29e;
+  margin-bottom: 2rem;
+  background-color: #0b0c10;
+  height: 220px;
+  padding-left: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.order:hover{
+  transform: scale(1.07);
+}
+.order--pic{
+  width: 200px;
+  position: relative;
+  right: 20%;
+  
+}
+
+.order--name{
+  color: white;
+  position: relative;
+  padding-bottom:10px;
+  bottom: 1rem;
+}
+.order--price{
+  color: white;
+  padding-inline: 55px;
+  position: relative;
+  bottom: 1rem;
+}
+.felbaqi{
+  height: 100%;
+}
+#lorem{
+  color: #c5c6c7;
+  margin-inline: 10px;
+}
+
+
