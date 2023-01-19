@@ -1,69 +1,83 @@
 
 .App {
   text-align: right;
-  background-color: #1f2833;
+  background-color: #1F2833;
+  
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-stretch: ultra-condensed;
 }
-.hello{
-  padding: 70px 70px;
-  margin-right: 50px;
-  font-size: 100px;
-  color: white;
-  height: auto;
-  padding-bottom: 500px;
+body{
+  
+  background-color: #1c2530;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
-
-.header{
-  display: inline-block;
-  width: 100%;
-}
-.header--title{
-  position: relative;
-  font-size: 2.7rem;
-  font-weight: 600;
-  margin-right: 8rem;
-  bottom: 6rem;
-  letter-spacing: -0.15rem;
-  color: #66FCF1;
-}
-.logo{
-  width: 100px;
-  padding-top: 20px;
-  padding-right: 0.7rem;
-}
-
 
 .list--contactUs{
   display: flex;
-  list-style-type: none;
-  position:relative;
-  bottom: 5rem;
-
+  flex-direction: column;
+  position:fixed;
+  align-items: center;
+  background-color: #070b24;
+  width: 30px;
+  height: 120px;
+  border-radius: 15px;
+  left:-33px;
+  padding-top: 3px;
+  justify-content: space-evenly;
+  gap: 1px;
 }
+
 .insta {
   width: 25px;
-  padding-right: 17px;
+  margin-left: 0px;
+  
+  padding-right: 15px;
+  
 }
 .phone{
   width: 25px;
-  padding-right: 17px;
+  padding-right: 15px;
 }
 .location{
   width: 25px;
+  padding-right: 15px;
+  
 }
+.header{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start space-evenly;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 3px 1rem #fdc500;
+  background-color: #070b24;
+
+}
+.header--title{
+  color: #4a7ed8;
+
+}
+.logo{
+  width: 40px;
+  padding-right: 5px;
+}
+
+
+
 .header--information{
-  color: #c5c6c7;
+  color: #fdc500;
   padding-inline : 1rem;
   position: relative;
   bottom: 5rem;
 }
-hr{
-  border-color: #66FCF1;
-  
-}
-ul{
+
+#list{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
@@ -77,94 +91,114 @@ ul{
   overflow: none;
   width: default;
   
+}
+.order--card::-webkit-scrollbar{
+  display: none;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  overflow: hidden;
+}
+.order--card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-bottom-left-radius: 10px;
+  gap: 30px;
+  overflow: auto;
+  height: 270px;
+  width: default;
+  padding-inline-start: 20px;
+}
+.order{
+  display: inherit;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fdc500;
+  border-radius: 10px;
+}
+.order--pic{
+  width: 190px;
+  position: inherit; 
+  justify-self:center;
+  background-color: whitesmoke;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.order--name{
+  padding-left:10px;
+  color: #c5c6c7;
+  font-weight: 1000;
+}
+.order--price{
+  padding-left:10px;
+  color: #c5c6c7;
+}
+.order--info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;  
+  gap: 1px;
+  background-color: #0b1236;
+  width:100%;
+  height: 60px;
+  padding-bottom: 2px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  }
+.lorem{
+  color: #c5c6c7;
+  margin-inline: 10px;
+  max-width: 70%;
+  margin: 25px 0px;
+  display: flex;
+  position: relative;
+  left: 25%;  
+  bottom: 50%;
   
-  
-
+}
+nav::-webkit-scrollbar{
+  display: none;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  overflow: hidden;
 }
 .nav{
-  background-color: #0b0c10;
+  background-color: #070b24;
   margin-left: 0.02rem;
-  
+  margin-right: 0.02rem;
+  margin-bottom: 20px;
   border-radius: 10px;
   overflow: auto;
   width: default;
 }
 .nav a{
-  color: #66fcf1;
+  color: #4a7ed8;
   text-decoration: none;
-  
+  padding: 5px 15px;
+  border-radius: 7px;
 }
-
-.nav li{
-  list-style: none;
-  color: inherit;
-  text-decoration: none;
-  margin: right 10px;;
-}
-
-
 .nav li.active {
-  background-color: #1f2833;
-  padding: 5px 5px;
-  color: white;
-  transform: scale(1.5);
-  text-decoration: none;
-  border-radius: 10px;
-  border: 1px solid #66fcf1;
-  
+  border-bottom: 2px solid #fdc500;
+  padding-bottom: 10px;
+  transform:scale(1.1);
 }
-
-
-.order--card{
-  position: relative;
+nav::-webkit-scrollbar{
+  display: none;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  overflow: hidden;
+}
+.order--title{
+  font-weight: 1500;
   display: block;
-  
-  padding: 20px ;
-  height: fit-content;
-  
-  
-
-}
-.order{
-  border: 1px solid #66FCF1;
-  border-radius: 20px;
-  box-shadow: 0px 2.98256px 7.4564px 5px #45a29e;
-  margin-bottom: 2rem;
-  background-color: #0b0c10;
-  height: 220px;
-  padding-left: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-size: larger;
+  color: #fdc500;
+  align-self: flex-end;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 5%;
   
 }
-.order:hover{
-  transform: scale(1.07);
-}
-.order--pic{
-  width: 200px;
-  position: relative;
-  right: 20%;
-  
-}
-
-.order--name{
-  color: white;
-  position: relative;
-  padding-bottom:10px;
-  bottom: 1rem;
-}
-.order--price{
-  color: white;
-  padding-inline: 55px;
-  position: relative;
-  bottom: 1rem;
-}
-.felbaqi{
-  height: 100%;
-}
-#lorem{
-  color: #c5c6c7;
-  margin-inline: 10px;
-}
-
-

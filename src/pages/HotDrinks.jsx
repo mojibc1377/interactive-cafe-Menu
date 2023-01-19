@@ -1,32 +1,23 @@
 import * as React from 'react';
+import OrderShower from '../components/oders';
+import foodData from '../foodData';
 
 export default function HotDrinks(){
+    const foods = foodData.map(item=>{
+  
+        return(
+          <OrderShower
+            key={item.id}
+            {...item}
+            />
+            );
+          }
+        )
+        
     return(
+        
         <div className='order--card'>
-        <div className='order'>
-            <img className="order--pic" src='/images/icons8-latte-64.png' alt="order" />
-            <br/>
-            <span className='order--name'>Name : Latte</span>
-            <span className='order--price'>Price : 50000T</span>
+            {foods}
         </div>
-        <div className='order'>
-            <img className="order--pic" src='/images/icons8-latte-64.png' alt="order" />
-            <br/>
-            <span className='order--name'>Name : Latte</span>
-            <span className='order--price'>Price : 50000T</span>
-        </div>
-        <div className='order'>
-            <img className="order--pic" src='/images/icons8-latte-64.png' alt="order" />
-            <br/>
-            <span className='order--name'>Name : Latte</span>
-            <span className='order--price'>Price : 50000T</span>
-        </div>
-        <div className='order'>
-            <img className="order--pic" src='/images/icons8-latte-64.png' alt="order" />
-            <br/>
-            <span className='order--name'>Name : Latte</span>
-            <span className='order--price'>Price : 50000T</span>
-        </div>
-    </div>
     )
 }

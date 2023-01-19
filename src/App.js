@@ -10,13 +10,17 @@ import EspressoBar from './pages/EspressoBar';
 import Smoothie from './pages/Smoothie';
 import BrewBar from './pages/BrewingCoffee';
 import HotDrinks from './pages/HotDrinks';
-
+import ContactUs from './components/contactUs';
+import Description from './components/Lorem';
+import Pishnahadi from './components/Pishnahadi';
 
 function App() {
   
   return (
     <div className="App">
       <Header/>
+      <ContactUs/>
+      <Description/>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -27,10 +31,8 @@ function App() {
         <Route path='/brewingBar' element={<BrewBar/>}/>
         <Route path='/hotDrinks' element={<HotDrinks/>}/>
         <Route path='/coldDrinks' element={<ColdDrinks/>}/>
-
-        
-
       </Routes>
+      <Pishnahadi/>
     </div>
   );
 }
