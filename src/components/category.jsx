@@ -8,23 +8,19 @@ function Navbar(){
     return(
             <nav className="nav" >
                 <ul id="list">
-            
                     
-                    <CustomLink to="/">Home</CustomLink>
                     
-                    <CustomLink to='/food'>Food</CustomLink>
+                    <CustomLink to='/pizza'>Pizza</CustomLink>
 
-                    <CustomLink to='/smoothie'>Smoothie</CustomLink>
+                    <CustomLink to='/burgers'>Burgers</CustomLink>
 
-                    <CustomLink to='/espressoBar'>EspressoBar</CustomLink>
+                    <CustomLink to='/sushi'>Sushi</CustomLink>
 
-                    <CustomLink to='/brewingBar'>BrewBar</CustomLink>
+                    <CustomLink to='/salad'>Salad</CustomLink>
 
-                    <CustomLink to='/hotDrinks'>hotDrinks</CustomLink>
+                    <CustomLink to='/pishQaza'>pishQaza</CustomLink>
 
-                    <CustomLink to='/cake'>Cakes</CustomLink>
-
-                    <CustomLink to='/coldDrinks'>coldDrinks</CustomLink>
+                    <CustomLink to='/khorak'>khorak</CustomLink>
 
 
                 </ul>

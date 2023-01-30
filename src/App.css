@@ -1,25 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 
 .App {
   text-align: right;
-  background-color: #1F2833;
-  
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #151515;
+  box-sizing: border-box;
+  font-family: "Lato",sans-serif;
   font-stretch: ultra-condensed;
+  -webkit-tap-highlight-color: transparent;
+  padding-right: 0;
+}
+.App::-webkit-scrollbar{
+  display: none;
+ 
 }
 body{
-  
-  background-color: #1c2530;
+  background-color: #151515;
   margin: 0px;
   display: flex;
   flex-direction: column;
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -14px; /* Increase/Decrease this value for cross-browser compatibility */
+    overflow-y: scroll;
+  
 }
+
+
 
 .list--contactUs{
   display: flex;
   flex-direction: column;
   position:fixed;
   align-items: center;
-  background-color: #070b24;
+  background-color: #111111;
   width: 30px;
   height: 120px;
   border-radius: 15px;
@@ -27,12 +43,12 @@ body{
   padding-top: 3px;
   justify-content: space-evenly;
   gap: 1px;
+  z-index: 9;
 }
 
 .insta {
   width: 25px;
   margin-left: 0px;
-  
   padding-right: 15px;
   
 }
@@ -47,19 +63,27 @@ body{
 }
 .header{
   display: flex;
+  position: fixed;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: flex-start space-evenly;
+  justify-content: space-between;
+  width: 100%;
   gap: 10px;
-  padding-top: 10px;
+  margin-top: 0;
   padding-bottom: 10px;
-  box-shadow: 0px 3px 1rem #fdc500;
-  background-color: #070b24;
+  box-shadow:  190px 55px 15rem #F07900;
+  background-color: #151515;
+  z-index: 100 !important;
+  top: 0;
 
 }
 .header--title{
-  color: #4a7ed8;
-
+  color: #c5c6c7;
+  width: max-content;
+  position: absolute;
+  align-self: center;
+  right: 15%;
+  bottom:35%;
 }
 .logo{
   width: 40px;
@@ -69,7 +93,7 @@ body{
 
 
 .header--information{
-  color: #fdc500;
+  color: #F07900;
   padding-inline : 1rem;
   position: relative;
   bottom: 5rem;
@@ -103,21 +127,26 @@ body{
   flex-direction: row;
   justify-content: space-between;
   padding-top: 20px;
-  border-bottom-left-radius: 10px;
   gap: 30px;
   overflow: auto;
-  height: 270px;
+  height: max-content;
   width: default;
-  padding-inline-start: 20px;
+  padding-inline: 20px;
+  margin-bottom: 50px;
+  
 }
 .order{
   display: inherit;
   flex-direction: column ;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #fdc500;
   border-radius: 10px;
+  height: fit-content;
+  box-shadow:  3px 3px 0.7rem #292d32;
+  height: fit-content;
+  margin-bottom: 10px;
 }
+
 .order--pic{
   width: 190px;
   position: inherit; 
@@ -125,6 +154,8 @@ body{
   background-color: whitesmoke;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+  z-index: 10!important;
+
 }
 .order--name{
   padding-left:10px;
@@ -141,18 +172,39 @@ body{
   justify-content: center;
   align-items: flex-start;  
   gap: 1px;
-  background-color: #0b1236;
+  background-color: #151515;
   width:100%;
   height: 60px;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding-top: 5px;
+
+  }
+  .visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    align-items: flex-start;
+    border-bottom-right-radius:0px ;
+    padding-left: 10px;
+
+  }
+  .hidden{
+    display: inherit;
+    position: relative;
+    align-self: flex-start;
+    border-bottom-left-radius: 0px;
+    border-left: 3px solid #151515;
+    padding-top: 10px;
+    right: 0px;
   }
 .lorem{
   color: #c5c6c7;
   margin-inline: 10px;
   max-width: 70%;
-  margin: 25px 0px;
+  margin: 90px 0px;
   display: flex;
   position: relative;
   left: 25%;  
@@ -166,24 +218,23 @@ nav::-webkit-scrollbar{
   overflow: hidden;
 }
 .nav{
-  background-color: #070b24;
-  margin-left: 0.02rem;
+  background-color: #111111;
   margin-right: 0.02rem;
   margin-bottom: 20px;
-  border-radius: 10px;
   overflow: auto;
   width: default;
 }
 .nav a{
-  color: #4a7ed8;
+  color: #c5c6c7;
   text-decoration: none;
-  padding: 5px 15px;
   border-radius: 7px;
+  padding-inline: 20px;
 }
 .nav li.active {
-  border-bottom: 2px solid #fdc500;
+  border-bottom: 2px solid #F07900;
   padding-bottom: 10px;
   transform:scale(1.1);
+  padding-inline: 10px;
 }
 nav::-webkit-scrollbar{
   display: none;
@@ -195,10 +246,199 @@ nav::-webkit-scrollbar{
   font-weight: 1500;
   display: block;
   font-size: larger;
-  color: #fdc500;
+  color: #F07900;
   align-self: flex-end;
   text-align: right;
   margin-top: 10px;
-  margin-right: 5%;
+  margin-left: 5%;
+  margin-right: 20px;
+  padding-right: 10px;
   
 }
+.sidebar{
+   height: 60px;
+   display: flex;
+   align-items: center;
+   padding-top: 0.1%;
+   justify-content: flex-end;
+}
+
+.menu-bars{
+  margin-right: 14rem;
+  font-size: 1.7rem;
+  background: none;
+  text-decoration: none;
+  padding-top: 10px;
+}
+.nav-menu{
+  background-color: #111111;
+  width: 250px;
+  height: 190vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  visibility: visible;
+  display: block;
+  z-index: 500 !important;
+}
+.nav-menu.active{
+  left: 0;
+  transition: 350ms;
+  }
+.nav-text{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0px 2px 16px;
+  list-style: none;
+  height: 60px;
+}
+.nav-text a{
+  text-decoration: none;
+  list-style: none;
+  color: #F07900;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  padding: 0px 0px;
+  border-radius: 4px;
+  padding-left: 20px;
+}
+.navbar-toggle li{
+  text-decoration: none;
+  list-style: none;
+
+}
+.nav-text a:hover{
+  background-color: #151515;
+  max-width:70%;
+}
+
+.nav-menu-items{
+  width: 100%;
+}
+.sidebar-toggle{
+  background-color: #151515;
+  width: 100%;
+
+  height: 80px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.itemTitle{
+  margin-left: 16px;
+
+}
+.home , .reports, .products{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.footer{
+  background-color: #111111;
+  display: flex;
+  flex-direction: row;
+  height:max-content;
+  justify-content: space-evenly;
+  padding-inline: 20px;
+  padding-bottom: 30px;
+  align-items: flex-end;
+  box-shadow:  -190px 55px 15rem #F07900;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  bottom: 0;
+}
+.footer--obj{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  gap: 10px;
+
+}
+.footer--obj--text{
+  color: #F07900;
+  font-size: 0.7rem;
+  align-items: center;
+
+}
+.footer--obj--logo{
+  align-self: flex-end;
+  font-size: 1.1rem;
+
+}
+
+.MuiButtonBase-root{
+  position: relative;
+  top: 13px;
+  
+}
+.MuiTypography-root{
+  background-color: #fec59f;
+  color: #151515;
+  max-width: 15rem;
+}
+.order-magnified{
+  display: block;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  border-radius: 10px;
+  height: fit-content;
+  box-shadow:  3px 3px 0.7rem #292d32;
+  height: fit-content;
+  margin-bottom: 10px;
+  z-index: 1500 !important;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.order--pic-magnified{
+  width: 250px;
+  position: inherit; 
+  justify-self:center;
+  background-color: whitesmoke;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  z-index: 10!important;
+  transition: 1300ms;
+
+}
+.order--name-magnified{
+  padding-left:10px;
+  color: #c5c6c7;
+  font-weight: 1000;
+}
+.order--price-magnified{
+  padding-left:10px;
+  color: #c5c6c7;
+}
+.order--info-magnified{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;  
+  gap: 1px;
+  background-color: #151515;
+  width:100%;
+  height: fit-content;
+  padding-bottom: 4px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 5px;
+  }
+  .order--ingridients{
+    padding-inline: 10px;
+    padding-top: 10px;
+    text-align: left;
+    color: #c5c6c7;
+  }

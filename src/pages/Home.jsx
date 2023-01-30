@@ -7,7 +7,7 @@ import OrderShower from '../components/oders';
 export default function Home(){
   
     return(
-        <div>hello world</div>
+        <h1 style={{"padding-right" : "30px"}}>pic gallery</h1>
     )
 }
     

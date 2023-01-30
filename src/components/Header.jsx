@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Sidebar from './sidebar';
 
 function Header(){
 	return(
@@ -7,6 +8,7 @@ function Header(){
 			<div className = 'qeyreAx--header' >	
 				<span className='header--title' > کافه هرچی</span>
 			</div>
+			<Sidebar/>
 		</div>
 	)
 }
