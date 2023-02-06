@@ -442,3 +442,6 @@ nav::-webkit-scrollbar{
     text-align: left;
     color: #c5c6c7;
   }
+  .slides{
+    width: 120px;
+  }
