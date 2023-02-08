@@ -1,14 +1,13 @@
 /* eslint-disable no-unused-vars */
 import * as React from 'react';
-import Navbar from '../components/category';
-import Header from '../components/Header';
-import pishnahad from '../pishnahad';
+
 import ImageSlider from '../components/slider';
+import sliderData from '../components/sliderData';
 export default function Home(){
   
     return(
         <>
-        <ImageSlider/>
+        <ImageSlider slides={sliderData}/>
         </>
     )
 }

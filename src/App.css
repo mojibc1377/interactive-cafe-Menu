@@ -39,7 +39,7 @@ body{
   width: 30px;
   height: 120px;
   border-radius: 15px;
-  left:-33px;
+  left:-31px;
   padding-top: 3px;
   justify-content: space-evenly;
   gap: 1px;
@@ -70,7 +70,6 @@ body{
   width: 100%;
   gap: 10px;
   margin-top: 0;
-  padding-bottom: 10px;
   box-shadow:  190px 55px 15rem #F07900;
   background-color: #151515;
   z-index: 100 !important;
@@ -81,9 +80,8 @@ body{
   color: #c5c6c7;
   width: max-content;
   position: absolute;
-  align-self: center;
   right: 15%;
-  bottom:35%;
+  bottom: 25%;
 }
 .logo{
   width: 40px;
@@ -144,11 +142,11 @@ body{
   height: fit-content;
   box-shadow:  3px 3px 0.7rem #292d32;
   height: fit-content;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .order--pic{
-  width: 190px;
+  width: 160px;
   position: inherit; 
   justify-self:center;
   background-color: whitesmoke;
@@ -160,7 +158,7 @@ body{
 .order--name{
   padding-left:10px;
   color: #c5c6c7;
-  font-weight: 1000;
+  font-weight: 700;
 }
 .order--price{
   padding-left:10px;
@@ -171,7 +169,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;  
-  gap: 1px;
+  gap: 2px;
   background-color: #151515;
   width:100%;
   height: 60px;
@@ -179,6 +177,7 @@ body{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-top: 5px;
+  
 
   }
   .visible{
@@ -204,12 +203,15 @@ body{
   color: #c5c6c7;
   margin-inline: 10px;
   max-width: 70%;
-  margin: 90px 0px;
+  margin-top: 70px;
   display: flex;
   position: relative;
-  left: 25%;  
   bottom: 50%;
-  
+  left: 16%;
+  background-color:#111111;
+  border-radius: 10px;
+  padding: 10px 10px;
+  opacity: 0.9;
 }
 nav::-webkit-scrollbar{
   display: none;
@@ -247,13 +249,12 @@ nav::-webkit-scrollbar{
   display: block;
   font-size: larger;
   color: #F07900;
-  align-self: flex-end;
+  align-self:flex-end;
+  align-items: center;
   text-align: right;
-  margin-top: 10px;
   margin-left: 5%;
   margin-right: 20px;
   padding-right: 10px;
-  
 }
 .sidebar{
    height: 60px;
@@ -271,7 +272,7 @@ nav::-webkit-scrollbar{
   padding-top: 10px;
 }
 .nav-menu{
-  background-color: #111111;
+  background-color: #151515;
   width: 250px;
   height: 190vh;
   display: flex;
@@ -285,8 +286,8 @@ nav::-webkit-scrollbar{
   z-index: 500 !important;
 }
 .nav-menu.active{
-  left: 0;
-  transition: 350ms;
+  left: -5%;
+  transition: 350ms ease-in;
   }
 .nav-text{
   display: flex;
@@ -315,12 +316,14 @@ nav::-webkit-scrollbar{
 
 }
 .nav-text a:hover{
-  background-color: #151515;
+  background-color: #111111;
   max-width:70%;
 }
 
 .nav-menu-items{
   width: 100%;
+  text-decoration: none;
+  list-style: none;
 }
 .sidebar-toggle{
   background-color: #151515;
@@ -348,6 +351,7 @@ nav::-webkit-scrollbar{
   height:max-content;
   justify-content: space-evenly;
   padding-inline: 20px;
+  margin-right: 14px;
   padding-bottom: 30px;
   align-items: flex-end;
   box-shadow:  -190px 55px 15rem #F07900;
@@ -442,6 +446,46 @@ nav::-webkit-scrollbar{
     text-align: left;
     color: #c5c6c7;
   }
-  .slides{
-    width: 120px;
-  }
+  .slider{
+  position: relative;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-right: 10px;
+}
+.image{
+  width: 41vh;
+  height: auto;
+  border-radius: 20px;
+  margin: 0;
+  box-shadow:  3px 3px 0.9rem #292d32;
+}
+.right-arrow{
+  position: absolute;
+  top: 40%;
+  right: 6vh;
+  color: white ;
+  opacity: 0.7;
+  font-size: 2rem;
+  z-index: 8;
+}
+.left-arrow{
+  position: absolute;
+  top: 40%;
+  left: 5vh;
+  color: white;
+  opacity: 0.7;
+  font-size: 2rem;
+  z-index: 8;
+}
+.slide{
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
