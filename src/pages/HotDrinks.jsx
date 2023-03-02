@@ -1,10 +1,9 @@
 import * as React from 'react';
 import OrderShower from '../components/oders';
-import pizzaData from '../pizzaData';
-import Navbar from '../components/category';
+import HotDrinksData from '../data/HotDrinksData';
 
 export default function HotDrinks(){
-    const foods = pizzaData.map(item=>{
+    const hotDrink = HotDrinksData.map(item=>{
   
         return(
           <OrderShower
@@ -17,9 +16,10 @@ export default function HotDrinks(){
         
     return(
         <>
-        <Navbar/>
+              <hr className='line'></hr>
+
         <div className='order--card'>
-            {foods}
+            {hotDrink}
         </div>
         </>
     )

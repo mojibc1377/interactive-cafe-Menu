@@ -1,7 +1,7 @@
 import * as React from 'react';
-import espressoData from '../espressoData';
+import espressoData from '../data/espressoData';
 import OrderShower from '../components/oders';
-import Navbar from '../components/category';
+
 
 export default function EspressoBar(){
     const espresso = espressoData.map(item=>{
@@ -18,7 +18,8 @@ export default function EspressoBar(){
     return(
         
       <>
-      <Navbar/>
+            <hr className='line'></hr>
+
       <div className='order--card'>
           {espresso}
       </div>

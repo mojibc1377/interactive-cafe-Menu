@@ -3,24 +3,21 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 
 
-function Navbar(){
+function Navbar(props){
 
     return(
             <nav className="nav" >
                 <ul id="list">
                     
                     
-                    <CustomLink to='/pizza'>Pizza</CustomLink>
+                    <CustomLink to='/smoothie'>{props.cat}</CustomLink>
 
-                    <CustomLink to='/burgers'>Burgers</CustomLink>
+                    <CustomLink to='/juice'>{props.cat2}</CustomLink>
 
-                    <CustomLink to='/sushi'>Sushi</CustomLink>
+                    <CustomLink to='/shake'>{props.cat3}</CustomLink>
 
-                    <CustomLink to='/salad'>Salad</CustomLink>
+                    <CustomLink to='/cocktails'>{props.cat4}</CustomLink>
 
-                    <CustomLink to='/pishQaza'>pishQaza</CustomLink>
-
-                    <CustomLink to='/khorak'>khorak</CustomLink>
 
 
                 </ul>

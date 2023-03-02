@@ -1,8 +1,9 @@
 import * as React from 'react';
-import smoothieData from '../smoothieData';
+import smoothieData from '../data/smoothieData';
 import OrderShower from '../components/oders';
+import Navbar from '../components/category';
 export default function Smoothie(){
-    const foods = smoothieData.map(item=>{
+    const smoothie = smoothieData.map(item=>{
   
         return(
           <OrderShower
@@ -14,9 +15,18 @@ export default function Smoothie(){
         )
         
     return(
-        
+      <>
+            <hr className='line'></hr>
+
+        <Navbar
+          cat ='اسموتی'
+          cat2 = 'ابمیوه'
+          cat3 = 'شیک'
+          cat4 ='کوکتل'
+        />
         <div className='order--card'>
-            {foods}
+            {smoothie}
         </div>
+      </>
     )
 }

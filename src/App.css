@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-
 .App {
   text-align: right;
-  background-color: #151515;
+  background-color: #151515;  
   box-sizing: border-box;
   font-family: "Lato",sans-serif;
   font-stretch: ultra-condensed;
@@ -12,10 +10,10 @@
 }
 .App::-webkit-scrollbar{
   display: none;
- 
 }
 body{
-  background-color: #151515;
+  background-color: #151515;  
+
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -25,11 +23,7 @@ body{
     left: 0;
     right: -14px; /* Increase/Decrease this value for cross-browser compatibility */
     overflow-y: scroll;
-  
 }
-
-
-
 .list--contactUs{
   display: flex;
   flex-direction: column;
@@ -67,31 +61,36 @@ body{
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 120%;
   gap: 10px;
   margin-top: 0;
-  box-shadow:  190px 55px 15rem #F07900;
+  box-shadow:  190px 55px 15rem #FFDC00;
   background-color: #151515;
   z-index: 100 !important;
   top: 0;
+  
 
 }
 .header--title{
-  color: #c5c6c7;
-  width: max-content;
+  color: #b9cad8;
   position: absolute;
-  right: 15%;
-  bottom: 25%;
+  width: max-content;
+  padding-right: 4vh;
+  font-size: 60px;
+  bottom: 55%;
+  left: 8vh;
 }
 .logo{
-  width: 40px;
-  padding-right: 5px;
+  width: 85px;
+  padding-right: 2vh;
+  margin-right: 8vh;
+  border-radius: 15px;
 }
 
 
 
 .header--information{
-  color: #F07900;
+  color: #FFDC00;
   padding-inline : 1rem;
   position: relative;
   bottom: 5rem;
@@ -147,6 +146,8 @@ body{
 
 .order--pic{
   width: 160px;
+  height: 150px;
+  background:#151515;
   position: inherit; 
   justify-self:center;
   background-color: whitesmoke;
@@ -156,19 +157,19 @@ body{
 
 }
 .order--name{
-  padding-left:10px;
-  color: #c5c6c7;
+  color: #b9cad8;
   font-weight: 700;
+  padding-right: 10px;
 }
 .order--price{
-  padding-left:10px;
-  color: #c5c6c7;
+  padding-right:10px;
+  color: #b9cad8;
 }
 .order--info{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;  
+  align-items: flex-end;  
   gap: 2px;
   background-color: #151515;
   width:100%;
@@ -200,7 +201,7 @@ body{
     right: 0px;
   }
 .lorem{
-  color: #c5c6c7;
+  color: #b9cad8;
   margin-inline: 10px;
   max-width: 70%;
   margin-top: 70px;
@@ -227,13 +228,13 @@ nav::-webkit-scrollbar{
   width: default;
 }
 .nav a{
-  color: #c5c6c7;
+  color: #b9cad8;
   text-decoration: none;
   border-radius: 7px;
   padding-inline: 20px;
 }
 .nav li.active {
-  border-bottom: 2px solid #F07900;
+  border-bottom: 2px solid #b9cad8;
   padding-bottom: 10px;
   transform:scale(1.1);
   padding-inline: 10px;
@@ -246,15 +247,18 @@ nav::-webkit-scrollbar{
 }
 .order--title{
   font-weight: 1500;
-  display: block;
+  position: relative;
+  max-width: 85px;
+  border-bottom: 2px solid #FFDC00;
   font-size: larger;
-  color: #F07900;
-  align-self:flex-end;
-  align-items: center;
+  color: #b9cad8;
   text-align: right;
-  margin-left: 5%;
-  margin-right: 20px;
-  padding-right: 10px;
+  margin-right: 30px;
+  padding-inline: 10px;  
+  box-shadow: #FFDC00;
+  padding-bottom: 7px;
+  border-bottom-style:outset;
+
 }
 .sidebar{
    height: 60px;
@@ -284,8 +288,10 @@ nav::-webkit-scrollbar{
   visibility: visible;
   display: block;
   z-index: 500 !important;
+  background-image: url("https://photos.google.com/photo/AF1QipN08qJW-1ai04fqrfJ6E55JR2Mh2FUaZ4KoQGBn");
 }
 .nav-menu.active{
+  
   left: -5%;
   transition: 350ms ease-in;
   }
@@ -300,7 +306,7 @@ nav::-webkit-scrollbar{
 .nav-text a{
   text-decoration: none;
   list-style: none;
-  color: #F07900;
+  color: #FFDC00;
   font-size: 18px;
   width: 95%;
   height: 100%;
@@ -326,7 +332,7 @@ nav::-webkit-scrollbar{
   list-style: none;
 }
 .sidebar-toggle{
-  background-color: #151515;
+  background-color: #111111;
   width: 100%;
 
   height: 80px;
@@ -354,7 +360,7 @@ nav::-webkit-scrollbar{
   margin-right: 14px;
   padding-bottom: 30px;
   align-items: flex-end;
-  box-shadow:  -190px 55px 15rem #F07900;
+  box-shadow:  -190px 55px 15rem #b9cad8;
   border-top-left-radius: 55px;
   border-top-right-radius: 55px;
   bottom: 0;
@@ -369,7 +375,7 @@ nav::-webkit-scrollbar{
 
 }
 .footer--obj--text{
-  color: #F07900;
+  color: #FFDC00;
   font-size: 0.7rem;
   align-items: center;
 
@@ -408,6 +414,7 @@ nav::-webkit-scrollbar{
 
 .order--pic-magnified{
   width: 250px;
+  height: 220px;
   position: inherit; 
   justify-self:center;
   background-color: whitesmoke;
@@ -418,19 +425,19 @@ nav::-webkit-scrollbar{
 
 }
 .order--name-magnified{
-  padding-left:10px;
-  color: #c5c6c7;
+  padding-right:10px;
+  color: #b9cad8;
   font-weight: 1000;
 }
 .order--price-magnified{
-  padding-left:10px;
-  color: #c5c6c7;
+  padding-right:10px;
+  color: #b9cad8;
 }
 .order--info-magnified{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;  
+  align-items: flex-end;  
   gap: 1px;
   background-color: #151515;
   width:100%;
@@ -443,8 +450,8 @@ nav::-webkit-scrollbar{
   .order--ingridients{
     padding-inline: 10px;
     padding-top: 10px;
-    text-align: left;
-    color: #c5c6c7;
+    text-align: right;
+    color: #b9cad8;
   }
   .slider{
   position: relative;
@@ -457,7 +464,8 @@ nav::-webkit-scrollbar{
 }
 .image{
   width: 41vh;
-  height: auto;
+  height: 240px;
+ 
   border-radius: 20px;
   margin: 0;
   box-shadow:  3px 3px 0.9rem #292d32;
@@ -465,7 +473,7 @@ nav::-webkit-scrollbar{
 .right-arrow{
   position: absolute;
   top: 40%;
-  right: 6vh;
+  right: 7vh;
   color: white ;
   opacity: 0.7;
   font-size: 2rem;
@@ -488,4 +496,19 @@ nav::-webkit-scrollbar{
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+}
+.devName{
+  color: #b9cad8;
+  font-family: fantasy;
+  position: absolute;
+  font-style: italic;
+  font-size: 5px;
+  bottom: 50%;  
+  left: 30%;
+}
+.line{
+  margin-inline: 40px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  
 }

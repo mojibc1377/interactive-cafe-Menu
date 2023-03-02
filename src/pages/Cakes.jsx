@@ -1,39 +1,28 @@
 import * as React from 'react';
+import OrderShower from '../components/oders';
+import cakesData from '../data/cakesData';
 
-export default function Cakes(){
+
+export default function EspressoBar(){
+    const cakes = cakesData.map(item=>{
+  
+        return(
+          <OrderShower
+            key={item.id}
+            {...item}
+            />
+            );
+          }
+        )
+        
     return(
-        <div className='order--card'>
-        <div className='order'>
-            <img className="order--pic" src='/images/icons8-lemon-cake-64.png' alt="order" />
-            <div className='order--info'>
-                <span className='order--name'>CheeseCake</span>
-                <span className='order--price'>120000T</span>
-            </div>
-        </div>
-        <div className='order'>
-            <img className="order--pic" src='/images/icons8-lemon-cake-64.png' alt="order" />
-            <div className='order--info'>
-                <span className='order--name'>CheeseCake</span>
-                <span className='order--price'>120000T</span>
+        
+      <>
+            <hr className='line'></hr>
 
-            </div>
-        </div>
-        <div className='order'>
-            <img className="order--pic" src='/images/icons8-lemon-cake-64.png' alt="order" />
-            <div className='order--info'>
-                <span className='order--name'>CheeseCake</span>
-                <span className='order--price'>120000T</span>
-
-            </div>
-        </div>
-        <div className='order'>
-            <img className="order--pic" src='/images/icons8-lemon-cake-64.png' alt="order" />
-            <div className='order--info'>
-                <span className='order--name'>CheeseCake</span>
-                <span className='order--price'>120000T</span>
-
-            </div>
-        </div>
-        </div>
+      <div className='order--card'>
+          {cakes}
+      </div>
+      </>
     )
 }

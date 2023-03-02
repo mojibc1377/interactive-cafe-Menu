@@ -1,5 +1,4 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as GiIcons from 'react-icons/gi';
 import * as MdIcons from 'react-icons/md';
@@ -7,52 +6,42 @@ import * as SiIcons from 'react-icons/si'
 
 export const SidebarData = [
   {
-    title: 'Home',
+    title: 'خانه',
     path: '/',
     icon: <AiIcons.AiFillHome />,
     cName: 'nav-text'
   },
   {
-    title: 'Foods',
-    path: '/food',
-    icon: <GiIcons.GiForkKnifeSpoon />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Smoothie',
-    path: '/smoothie',
-    icon: <FaIcons.FaCocktail />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'EspressoBar',
+    title: 'اسپرسوبار',
     path: '/espressoBar',
     icon: <GiIcons.GiCoffeeCup />,
     cName: 'nav-text'
   },
   {
-    title: 'brewingBar',
+    title: 'قهوه دمی',
     path: '/brewingBar',
     icon: <GiIcons.GiCoffeePot/>,
     cName: 'nav-text'
   },
+ 
+  
   {
-    title: 'hotDrinks',
+    title: 'نوشیدنی گرم',
     path: '/hotDrinks',
     icon: <MdIcons.MdOutlineEmojiFoodBeverage />,
     cName: 'nav-text'
   },
   {
-    title: 'Cakes',
+    title: 'نوشیدنی سرد',
+    path: '/coldDrinks',
+    icon: <SiIcons.SiBuymeacoffee />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'کیک ها',
     path: '/cakes',
     icon: <GiIcons.GiCupcake/>,
     cName: 'nav-text'
   },
-  {
-    title: 'coldDrinks',
-    path: '/coldDrinks',
-    icon: <SiIcons.SiBuymeacoffee />,
-    cName: 'nav-text'
-  }
 
 ];

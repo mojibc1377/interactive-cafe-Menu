@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import * as AiIcons from "react-icons/ai"
 import * as RiIcons from "react-icons/ri"
-import { SidebarData } from '../SidebarData'
+import { SidebarData } from '../data/SidebarData'
 import { IconContext } from 'react-icons'
 
 function Sidebar() {
@@ -10,17 +10,17 @@ function Sidebar() {
     const showSideBar =() => setSideBar(!sideBar)
   return (
     <>
-    <IconContext.Provider value={{color:'#c5c6c7'}}>
+    <IconContext.Provider value={{color:'#b9cad8'}}>
       <div className='sidebar'>
         <Link to="#" className='menu-bars'>
             <ul className=''>
-                <IconContext.Provider value={{color:'#F07900'}}>
+                <IconContext.Provider value={{color:'#FFDC00'}}>
                     <RiIcons.RiMenuUnfoldLine onClick={showSideBar} />
                 </IconContext.Provider>
             </ul>
         </Link>
     </div>
-    <nav className={sideBar ? 'nav-menu active' : 'nav-menu'}>
+    <nav className={sideBar ? 'nav-menu active' : 'nav-menu'} >
         <ul className = 'nav-menu-items' onClick={showSideBar}>
             <li className='navbar-toggle'>
                 <Link to="#" className='menu-bars'>
@@ -38,10 +38,12 @@ function Sidebar() {
                 )
             })}
         </ul>
+        <span className='header--title' >کافه فلو</span>
+        <div className='devName'>Moji-Bc</div>
     </nav>
     </IconContext.Provider>
     </>
-  )
+      )
 }
 
 export default Sidebar;
