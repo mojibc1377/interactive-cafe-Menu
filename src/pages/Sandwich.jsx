@@ -1,10 +1,8 @@
 import * as React from 'react';
-import espressoData from '../data/espressoData';
 import OrderShower from '../components/oders';
-
-
-export default function EspressoBar(){
-    const espresso = espressoData.map(item=>{
+import sandwichData from '../data/sandwichData';
+export default function Sandwiches(){
+    const sandwich = sandwichData.map(item=>{
   
         return(
           <OrderShower
@@ -18,11 +16,11 @@ export default function EspressoBar(){
     return(
         
       <>
-        <hr className='line'></hr>
-        
-        <div className='order--card'>
-            {espresso}
-        </div>
+      <hr className='line'></hr>
+
+      <div className='order--card'>
+          {sandwich}
+      </div>
       </>
     )
 }

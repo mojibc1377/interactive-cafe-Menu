@@ -15,6 +15,8 @@ import Footer from './components/footer';
 import Cocktails from './components/Cocktails'
 import Juices from './components/juice';
 import Shake from './components/Shake';
+import Sandwiches from './pages/Sandwich';
+import Shop from './pages/shop';
 function App() {
   return (
     
@@ -34,6 +36,9 @@ function App() {
         <Route path='/hotDrinks' element={<HotDrinks/>}/>
         <Route path='/cocktails' element={<Cocktails/>}/>
         <Route path='/shake' element={<Shake/>}/>
+        <Route path='/sandwich' element={<Sandwiches/>}/>
+        <Route path='/shop' element={<Shop/>}/>
+
       </Routes>
       <Pishnahadi/> 
       <Footer/>

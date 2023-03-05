@@ -38,8 +38,7 @@ function Sidebar() {
                 )
             })}
         </ul>
-        <span className='header--title' >کافه فلو</span>
-        <div className='devName'>Moji-Bc</div>
+        
     </nav>
     </IconContext.Provider>
     </>

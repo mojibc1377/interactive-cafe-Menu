@@ -12,23 +12,21 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'اسپرسوبار',
+    title: 'نوشیدنی بر پایه اسپرسو',
     path: '/espressoBar',
     icon: <GiIcons.GiCoffeeCup />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'نوشیدنی گرم',
+    path: '/hotDrinks',
+    icon: <MdIcons.MdOutlineEmojiFoodBeverage />,
     cName: 'nav-text'
   },
   {
     title: 'قهوه دمی',
     path: '/brewingBar',
     icon: <GiIcons.GiCoffeePot/>,
-    cName: 'nav-text'
-  },
- 
-  
-  {
-    title: 'نوشیدنی گرم',
-    path: '/hotDrinks',
-    icon: <MdIcons.MdOutlineEmojiFoodBeverage />,
     cName: 'nav-text'
   },
   {
@@ -41,6 +39,18 @@ export const SidebarData = [
     title: 'کیک ها',
     path: '/cakes',
     icon: <GiIcons.GiCupcake/>,
+    cName: 'nav-text'
+  },
+  {
+    title: 'ساندویچ ها',
+    path: '/sandwich',
+    icon: <GiIcons.GiSandwich />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'فروشگاه',
+    path: '/shop',
+    icon: <AiIcons.AiOutlineShop />,
     cName: 'nav-text'
   },
 

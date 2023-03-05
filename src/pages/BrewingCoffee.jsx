@@ -17,7 +17,7 @@ export default function EspressoBar(){
         
       <>
       <hr className='line'></hr>
-
+      <span className='categoryDescription'>نوعی قهوه که با فشار زیاد آب از طریق دانه های آسیاب شده قهوه تهیه می‌شود </span>
       <div className='order--card'>
           {brewed}
       </div>

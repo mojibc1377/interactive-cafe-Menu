@@ -126,7 +126,7 @@ body{
   padding-top: 20px;
   gap: 30px;
   overflow: auto;
-  height: max-content;
+  height: fit-content;
   width: default;
   padding-inline: 20px;
   margin-bottom: 50px;
@@ -178,8 +178,6 @@ body{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-top: 5px;
-  
-
   }
   .visible{
     display: flex;
@@ -189,7 +187,6 @@ body{
     align-items: flex-start;
     border-bottom-right-radius:0px ;
     padding-left: 10px;
-
   }
   .hidden{
     display: inherit;
@@ -204,7 +201,7 @@ body{
   color: #b9cad8;
   margin-inline: 10px;
   max-width: 70%;
-  margin-top: 70px;
+  margin-top: 90px;
   display: flex;
   position: relative;
   bottom: 50%;
@@ -222,8 +219,8 @@ nav::-webkit-scrollbar{
 }
 .nav{
   background-color: #111111;
-  margin-right: 0.02rem;
   margin-bottom: 20px;
+  padding-inline: 20px;
   overflow: auto;
   width: default;
 }
@@ -261,7 +258,7 @@ nav::-webkit-scrollbar{
 
 }
 .sidebar{
-   height: 60px;
+   height: 80px;
    display: flex;
    align-items: center;
    padding-top: 0.1%;
@@ -284,7 +281,7 @@ nav::-webkit-scrollbar{
   position: fixed;
   top: 0;
   left: -100%;
-  transition: 850ms;
+  transition: 1150ms;
   visibility: visible;
   display: block;
   z-index: 500 !important;
@@ -292,14 +289,14 @@ nav::-webkit-scrollbar{
 }
 .nav-menu.active{
   
-  left: -5%;
-  transition: 350ms ease-in;
+  left: -0%;
+  transition: 350ms ease-in-out;
   }
 .nav-text{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 8px 0px 2px 16px;
+  padding: 8px 0px 2px 0px;
   list-style: none;
   height: 60px;
 }
@@ -314,7 +311,7 @@ nav::-webkit-scrollbar{
   align-items: center;
   padding: 0px 0px;
   border-radius: 4px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .navbar-toggle li{
   text-decoration: none;
@@ -323,7 +320,7 @@ nav::-webkit-scrollbar{
 }
 .nav-text a:hover{
   background-color: #111111;
-  max-width:70%;
+  max-width:80%;
 }
 
 .nav-menu-items{
@@ -334,14 +331,12 @@ nav::-webkit-scrollbar{
 .sidebar-toggle{
   background-color: #111111;
   width: 100%;
-
   height: 80px;
   justify-content: flex-start;
   align-items: center;
 }
 .itemTitle{
   margin-left: 16px;
-
 }
 .home , .reports, .products{
   display: flex;
@@ -356,8 +351,7 @@ nav::-webkit-scrollbar{
   flex-direction: row;
   height:max-content;
   justify-content: space-evenly;
-  padding-inline: 20px;
-  margin-right: 14px;
+  margin-right: 15px;
   padding-bottom: 30px;
   align-items: flex-end;
   box-shadow:  -190px 55px 15rem #b9cad8;
@@ -372,7 +366,6 @@ nav::-webkit-scrollbar{
   margin-top: 30px;
   margin-bottom: 10px;
   gap: 10px;
-
 }
 .footer--obj--text{
   color: #FFDC00;
@@ -383,13 +376,11 @@ nav::-webkit-scrollbar{
 .footer--obj--logo{
   align-self: flex-end;
   font-size: 1.1rem;
-
 }
 
 .MuiButtonBase-root{
   position: relative;
   top: 13px;
-  
 }
 .MuiTypography-root{
   background-color: #fec59f;
@@ -398,18 +389,13 @@ nav::-webkit-scrollbar{
 }
 .order-magnified{
   display: block;
-  flex-direction: column ;
   align-items: center;
-  justify-content: space-between;
   width: fit-content;
   border-radius: 10px;
-  height: fit-content;
+  height: max-content;
   box-shadow:  3px 3px 0.7rem #292d32;
-  height: fit-content;
   margin-bottom: 10px;
-  z-index: 1500 !important;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  z-index: 1500 !important; 
 }
 
 .order--pic-magnified{
@@ -422,7 +408,6 @@ nav::-webkit-scrollbar{
   border-top-right-radius: 9px;
   z-index: 10!important;
   transition: 1300ms;
-
 }
 .order--name-magnified{
   padding-right:10px;
@@ -460,13 +445,11 @@ nav::-webkit-scrollbar{
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 .image{
   width: 40vh;
   height: 30vh;
   overflow-x: none;
- 
   border-radius: 20px;
   margin: 0;
   box-shadow:  3px 3px 0.9rem #292d32;
@@ -474,7 +457,7 @@ nav::-webkit-scrollbar{
 .right-arrow{
   position: absolute;
   top: 43%;
-  right: 6vh;
+  right: 7vh;
   color: white ;
   opacity: 0.7;
   font-size: 2rem;
@@ -483,7 +466,7 @@ nav::-webkit-scrollbar{
 .left-arrow{
   position: absolute;
   top: 43%;
-  left: 6vh;
+  left: 7vh;
   color: white;
   opacity: 0.7;
   font-size: 2rem;
@@ -511,5 +494,21 @@ nav::-webkit-scrollbar{
   margin-inline: 40px;
   margin-top: 20px;
   margin-bottom: 15px;
-  
+}
+.categoryDescription{
+  color: #b9cad8;
+  margin-inline: 10px;
+  max-width: 70%;
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+  bottom: 50%;
+  left: 16%;
+  background-color:#111111;
+  border-radius: 10px;
+  padding: 10px 10px;
+  opacity: 0.9;
+}
+.display-linebreak {
+  white-space: pre-line;
 }
