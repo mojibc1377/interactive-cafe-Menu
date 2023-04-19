@@ -351,12 +351,12 @@ nav::-webkit-scrollbar{
   flex-direction: row;
   height:max-content;
   justify-content: space-evenly;
-  margin-right: 15px;
+  width: 100%;
   padding-bottom: 30px;
   align-items: flex-end;
   box-shadow:  -190px 55px 15rem #b9cad8;
   border-top-left-radius: 55px;
-  border-top-right-radius: 55px;
+  border-top-right-radius: -55px;
   bottom: 0;
 }
 .footer--obj{

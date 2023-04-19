@@ -42,10 +42,6 @@ function App() {
       </Routes>
       <Pishnahadi/> 
       <Footer/>
-      
-
-        
-      
     </div>
   );
 }
