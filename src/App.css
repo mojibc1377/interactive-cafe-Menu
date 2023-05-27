@@ -82,8 +82,8 @@ body{
 }
 .logo{
   width: 85px;
-  padding-right: 2vh;
-  margin-right: 8vh;
+  position: absolute;
+  right:14%;
   border-radius: 15px;
 }
 
@@ -173,7 +173,7 @@ body{
   gap: 2px;
   background-color: #151515;
   width:100%;
-  height: 60px;
+  height: max-content;
   padding-bottom: 4px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -387,51 +387,8 @@ nav::-webkit-scrollbar{
   color: #151515;
   max-width: 15rem;
 }
-.order-magnified{
-  display: block;
-  align-items: center;
-  width: fit-content;
-  border-radius: 10px;
-  height: max-content;
-  box-shadow:  3px 3px 0.7rem #292d32;
-  margin-bottom: 10px;
-  z-index: 1500 !important; 
-}
 
-.order--pic-magnified{
-  width: 250px;
-  height: 220px;
-  position: inherit; 
-  justify-self:center;
-  background-color: whitesmoke;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  z-index: 10!important;
-  transition: 1300ms;
-}
-.order--name-magnified{
-  padding-right:10px;
-  color: #b9cad8;
-  font-weight: 1000;
-}
-.order--price-magnified{
-  padding-right:10px;
-  color: #b9cad8;
-}
-.order--info-magnified{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;  
-  gap: 1px;
-  background-color: #151515;
-  width:100%;
-  height: fit-content;
-  padding-bottom: 4px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding-top: 5px;
-  }
+
   .order--ingridients{
     padding-inline: 10px;
     padding-top: 10px;
@@ -511,4 +468,52 @@ nav::-webkit-scrollbar{
 }
 .display-linebreak {
   white-space: pre-line;
+}
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.97);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100000;
+}
+.product-modal {
+  background:none;
+  border-radius: 5px;
+  left: 50%;
+  width: 70%;
+  max-height: 80%;
+  max-width: 80%;
+  overflow: auto;
+  position: fixed;
+  padding: 10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+}
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  justify-content: space-between;
+  box-shadow: 100px 100px 0.3rem rgba(240, 236, 236, 0.3);
+
+}
+.order--pic--modal{
+  width: 100%;
+  background-color: #b9cad8;
+  position: inherit; 
+  padding: 0;
+  justify-self:center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 10!important;
+
+}
+.order--description{
+  padding: 10px;
+  color: #b9cad8;
 }
