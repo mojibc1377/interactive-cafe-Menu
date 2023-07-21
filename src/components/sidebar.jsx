@@ -9,7 +9,7 @@ function Sidebar() {
     const[sideBar, setSideBar] = React.useState(false)
     const showSideBar =() => setSideBar(!sideBar)
   return (
-    <>
+    < div className=' ps-4'>
     <IconContext.Provider value={{color:'#b9cad8'}}>
       <div className='sidebar'>
         <Link to="#" className='menu-bars'>
@@ -20,11 +20,11 @@ function Sidebar() {
             </ul>
         </Link>
     </div>
-    <nav className={sideBar ? 'nav-menu active' : 'nav-menu'} >
+    <nav className={sideBar ? 'nav-menu active ps-4' : 'nav-menu ps-4'} >
         <ul className = 'nav-menu-items' onClick={showSideBar}>
             <li className='navbar-toggle'>
                 <Link to="#" className='menu-bars'>
-                    <AiIcons.AiOutlineClose/>
+                    <AiIcons.AiOutlineClose className=' mt-8 ml-3'/>
                 </Link>
             </li>
             {SidebarData.map((item, index)=>{
@@ -32,7 +32,7 @@ function Sidebar() {
                     <li key = {index} className={item.cName}>
                         <Link to={item.path}>
                             {item.icon}
-                            <span className='itemTitle'>{item.title}</span>
+                            <span className='itemTitle text-base'>{item.title}</span>
                         </Link>
                     </li>
                 )
@@ -41,7 +41,7 @@ function Sidebar() {
         
     </nav>
     </IconContext.Provider>
-    </>
+    </div>
       )
 }
 

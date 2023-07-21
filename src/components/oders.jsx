@@ -18,7 +18,7 @@ function OrderShower(props) {
   return (
     <>
       <div>
-        <div className="order" typeof="button" onClick={flipper}>
+        <div className="order lg:w-40 w-40" typeof="button" onClick={flipper}>
           {loading ? (
             <div className="loading-placeholder" />
           ) : (
@@ -26,21 +26,23 @@ function OrderShower(props) {
           )}
           <div className="order--info">
             <div className="order--info">
-              <span className="order--name">{props.name}</span>
-              <span className="order--price">{props.price}</span>
+              <p className="order--name">{props.name}</p>
+              <p className="order--price">{props.price}</p>
             </div>
           </div>
         </div>
       </div>
       {card && (
         <div className="backdrop" onClick={() => setCard((prevCard) => !prevCard)}>
-            <div className="product-modal">
+            <div className="product-modal lg:w-72">
                 <div className="order" typeof='button' onClick={flipper}>
                     <img className="order--pic--modal" src={props.img} alt="order" />
-                        <div className="order--info" >
-                            <span className="order--name" >{props.name}</span>
-                            <span className="order--price" >{props.price}</span>
-                            <span className='order--description' >{props.description}</span>
+                        <div className="order--info">
+                        <div className="order--info-modal flex flex-col h-fit" >
+                            <p className="order--name" >{props.name}</p>
+                            <p className="order--price" >{props.price}</p>
+                            <p className='order--description' >{props.description}</p>
+                        </div>
                         </div>
                 </div>           
             </div>
