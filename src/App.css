@@ -278,7 +278,6 @@ nav::-webkit-scrollbar{
 .nav-menu{
   background-color: #151515;
   width: 250px;
-  height: 190vh;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -288,7 +287,15 @@ nav::-webkit-scrollbar{
   visibility: visible;
   display: block;
   z-index: 500 !important;
-  background-image: url("https://photos.google.com/photo/AF1QipN08qJW-1ai04fqrfJ6E55JR2Mh2FUaZ4KoQGBn");
+  background-color: #111111; /* Add your desired sidebar background color */
+  position: fixed;
+  left: 0;
+  height: 100%;
+  z-index: 100000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  pointer-events: auto;
+
 }
 .nav-menu.active{
   
@@ -323,7 +330,7 @@ nav::-webkit-scrollbar{
 }
 .nav-text a:hover{
   background-color: #111111;
-  max-width:80%;
+  color: #c5c6c7;
 }
 
 .nav-menu-items{
@@ -540,3 +547,33 @@ nav::-webkit-scrollbar{
   }
 }
 
+/* Sidebar.css */
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5); /* Add your desired overlay color here */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events:painted; /* Allows click-through on the overlay */
+}
+
+
+/* Add styles to show the sidebar when it's active */
+.nav-menu.active {
+  transform: translateX(0);
+}
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

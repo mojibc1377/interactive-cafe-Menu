@@ -20,7 +20,7 @@ import Shop from './pages/shop';
 function App() {
   return (
     
-    <div className="App" >
+    <div className="App fadeOut" >
       
       <Header/>
       <ContactUs/>
